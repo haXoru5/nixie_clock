@@ -16,6 +16,10 @@ $CMP IN-14
 D Common Anode Nixie Tube
 $ENDCMP
 #
+$CMP IN-3
+D Nixie Tube Decimal Point
+$ENDCMP
+#
 $CMP K155ID1
 D BCD-to-Decimal Decoder for Nixie Tubes
 $ENDCMP
