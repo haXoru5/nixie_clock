@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Nixie_Lib)(type Legacy)(uri ${KIPRJMOD}/Nixie_Lib.lib)(options "")(descr ""))
+)

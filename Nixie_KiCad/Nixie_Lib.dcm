@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Arduino_UNO_R3
+D Arduino UNO Microcontroller Module, release 3
+K Arduino UNO R3 Microcontroller Module Atmel AVR USB
+F https://www.arduino.cc/en/Main/arduinoBoardUno
+$ENDCMP
+#
+$CMP DS3231M
+D Extremely Accurate I2C-Integrated RTC/TCXO/Crystal SOIC-16
+K RTC TCXO Realtime Time Clock Crystal Oscillator I2C
+F http://datasheets.maximintegrated.com/en/ds/DS3231.pdf
+$ENDCMP
+#
+$CMP IN-14
+D Common Anode Nixie Tube
+$ENDCMP
+#
+$CMP K155ID1
+D BCD-to-Decimal Decoder for Nixie Tubes
+$ENDCMP
+#
+$CMP PS_V2H
+D High Voltage Nixie Power Supply
+$ENDCMP
+#
+#End Doc Library
