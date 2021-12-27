@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name Nixie_Lib)(type Legacy)(uri ${KIPRJMOD}/Nixie_Lib.lib)(options "")(descr ""))
+  (lib (name Nixie_Lib)(type Legacy)(uri ${KIPRJMOD}/Nixie_Lib.lib)(options "")(descr "Symbols for Nixie Clock"))
+  (lib (name Nixie_Clock-rescue)(type Legacy)(uri ${KIPRJMOD}/Nixie_Clock-rescue.lib)(options "")(descr ""))
 )

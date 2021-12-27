@@ -17,6 +17,12 @@ K RTC TCXO Realtime Time Clock Crystal Oscillator I2C
 F http://datasheets.maximintegrated.com/en/ds/DS3231.pdf
 $ENDCMP
 #
+$CMP DS3231M
+D Extremely Accurate I2C-Integrated RTC/TCXO/Crystal SOIC-16
+K RTC TCXO Realtime Time Clock Crystal Oscillator I2C
+F http://datasheets.maximintegrated.com/en/ds/DS3231.pdf
+$ENDCMP
+#
 $CMP IN-14
 D Common Anode Nixie Tube
 $ENDCMP
