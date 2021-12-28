@@ -11,10 +11,6 @@ K Arduino UNO R3 Microcontroller Module Atmel AVR USB
 F https://www.arduino.cc/en/Main/arduinoBoardUno
 $ENDCMP
 #
-$CMP DS3231
-D Real Time Clock Module
-$ENDCMP
-#
 $CMP IN-14
 D Common Anode Nixie Tube
 $ENDCMP
