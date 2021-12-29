@@ -5,6 +5,12 @@ D Power symbol creates a global label with name "+170V"
 K power-flag
 $ENDCMP
 #
+$CMP Arduino_Nano_Every
+D Arduino Nano Every
+K Arduino nano microcontroller module USB UPDI AATMega4809 AVR
+F https://content.arduino.cc/assets/NANOEveryV3.0_sch.pdf
+$ENDCMP
+#
 $CMP Arduino_UNO_R3
 D Arduino UNO Microcontroller Module, release 3
 K Arduino UNO R3 Microcontroller Module Atmel AVR USB

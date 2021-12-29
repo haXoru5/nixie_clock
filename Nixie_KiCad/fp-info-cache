@@ -1,4 +1,4 @@
-19412842668377332
+19414483569193581
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -58758,6 +58758,13 @@ DS3231
 6
 6
 Nixie_Clock_Footprint
+IN-3
+
+
+0
+2
+2
+Nixie_Clock_Footprint
 IN-14
 
 
@@ -58776,8 +58783,8 @@ PS_V2H
 
 
 0
-2
-2
+5
+5
 OptoDevice
 ADNS-9800
 Laser Gaming Sensor ADNS-9800
