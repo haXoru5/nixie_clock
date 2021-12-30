@@ -478,17 +478,6 @@ Wire Wire Line
 	7050 4500 6950 4500
 Wire Wire Line
 	6950 4500 6950 4400
-$Comp
-L power:GND #PWR021
-U 1 1 61CE0EAF
-P 6950 4700
-F 0 "#PWR021" H 6950 4450 50  0001 C CNN
-F 1 "GND" H 6955 4527 50  0000 C CNN
-F 2 "" H 6950 4700 50  0001 C CNN
-F 3 "" H 6950 4700 50  0001 C CNN
-	1    6950 4700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6950 4700 6950 4600
 Wire Wire Line
@@ -758,17 +747,6 @@ NoConn ~ 7650 2750
 NoConn ~ 7650 2650
 NoConn ~ 7650 2550
 $Comp
-L power:GND #PWR023
-U 1 1 61D94328
-P 1600 5450
-F 0 "#PWR023" H 1600 5200 50  0001 C CNN
-F 1 "GND" H 1605 5277 50  0000 C CNN
-F 2 "" H 1600 5450 50  0001 C CNN
-F 3 "" H 1600 5450 50  0001 C CNN
-	1    1600 5450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Nixie_Lib:IN-3 U6
 U 1 1 61DA4CEC
 P 7950 3350
@@ -792,8 +770,6 @@ F 3 "" H 1600 5000 50  0001 C CNN
 	1    1600 5000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1600 5350 1600 5450
 Wire Wire Line
 	1600 4650 1500 4650
 $Comp
@@ -901,7 +877,6 @@ NoConn ~ 1200 3250
 NoConn ~ 1200 3550
 NoConn ~ 1200 3650
 NoConn ~ 1600 4050
-NoConn ~ 1700 2050
 $Comp
 L Nixie_Lib:Arduino_Nano_Every A1
 U 1 1 61EA91F0
@@ -912,5 +887,22 @@ F 2 "Module:Arduino_Nano" H 1700 3050 50  0001 C CIN
 F 3 "https://content.arduino.cc/assets/NANOEveryV3.0_sch.pdf" H 1700 3050 50  0001 C CNN
 	1    1700 3050
 	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 5350 2550 5350
+Wire Wire Line
+	2550 5350 2550 2050
+Wire Wire Line
+	2550 2050 1700 2050
+$Comp
+L power:Earth #PWR?
+U 1 1 61D64376
+P 6950 4700
+F 0 "#PWR?" H 6950 4450 50  0001 C CNN
+F 1 "Earth" H 6950 4550 50  0001 C CNN
+F 2 "" H 6950 4700 50  0001 C CNN
+F 3 "~" H 6950 4700 50  0001 C CNN
+	1    6950 4700
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
