@@ -1,6 +1,10 @@
-Item,Description,Quantity,Datasheet,Link,Notes
-IN-14,Nixie Tubes,4,,,
-K155ID1,BCD-Decimal Decoder,4,,,
-IN 14 Power Supply,130-200V Power Supply,1,,www.ebay.ca/itm/182121118604,
-DS3231 ,Real Time Clock,1,,www.aliexpress.com/item/1005001621707646.html,
-Arduino Uno,Microprocessor,1,,,
+Reference, Quantity, Value, Footprint, Datasheet
+A1 ,1,Arduino_Nano_Every,Module:Arduino_Nano,https://content.arduino.cc/assets/NANOEveryV3.0_sch.pdf
+R1 R2 R4 R5 R6 R8 R9 ,7,10k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,~
+R3 ,1,100k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,~
+R7 ,1,5k1,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,~
+U12 ,1,DS3231,Nixie_Clock_Footprint:DS3231,https://datasheets.maximintegrated.com/en/ds/DS3231.pdf
+U6 ,1,IN-3,Nixie_Clock_Footprint:IN-3,http://www.tube-tester.com/sites/nixie/dat_arch/IN-3.pdf
+U7 ,1,PS_V2H,Nixie_Clock_Footprint:PS_V2H,https://github.com/haXoru5/nixie_clock/blob/main/PS_V2H.pdf
+U1 U3 U5 U8 U10 ,5,K155ID1,Nixie_Clock_Footprint:K155ID1,https://tubehobby.com/datasheets/k155id1.pdf
+U2 U4 U9 U11 ,4,IN-14,Nixie_Clock_Footprint:IN-14,https://tubehobby.com/datasheets/in14.pdf
