@@ -758,7 +758,7 @@ F 3 "" H 7950 3350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 8400 4500 0    50   ~ 0
-Can add optional 100nF\nfilter capacitor here
+Can add optional 100nF\nfilter capacitor here\nand/or voltage rectifier
 $Comp
 L Nixie_Lib:DS3231 U12
 U 1 1 61CB6AC0
