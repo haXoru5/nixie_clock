@@ -33,6 +33,14 @@ $CMP K155ID1
 D BCD-to-Decimal Decoder for Nixie Tubes
 $ENDCMP
 #
+$CMP L7812CV
+D Voltage Regulator 12.0V Fixed Output
+$ENDCMP
+#
+$CMP NCV7805BTG
+D Voltage Regulator 5.0V Fixed Output
+$ENDCMP
+#
 $CMP PS_V2H
 D High Voltage Nixie Power Supply
 $ENDCMP

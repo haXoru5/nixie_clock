@@ -5,10 +5,20 @@ D Power symbol creates a global label with name "+170V"
 K power-flag
 $ENDCMP
 #
+$CMP Arduino_Nano_Every
+D Arduino Nano Every
+K Arduino nano microcontroller module USB UPDI AATMega4809 AVR
+F https://content.arduino.cc/assets/NANOEveryV3.0_sch.pdf
+$ENDCMP
+#
 $CMP Arduino_UNO_R3
 D Arduino UNO Microcontroller Module, release 3
 K Arduino UNO R3 Microcontroller Module Atmel AVR USB
 F https://www.arduino.cc/en/Main/arduinoBoardUno
+$ENDCMP
+#
+$CMP DS3231
+D Real Time Clock Module
 $ENDCMP
 #
 $CMP IN-14
@@ -21,6 +31,18 @@ $ENDCMP
 #
 $CMP K155ID1
 D BCD-to-Decimal Decoder for Nixie Tubes
+$ENDCMP
+#
+$CMP L7812CV
+D Voltage Regulator 12.0V Fixed Output
+$ENDCMP
+#
+$CMP NCV7800
+D Voltage Regulator 5.0V Fixed Output
+$ENDCMP
+#
+$CMP NCV7805BTG
+D Voltage Regulator 5.0V Fixed Output
 $ENDCMP
 #
 $CMP PS_V2H
