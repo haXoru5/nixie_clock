@@ -115,12 +115,12 @@ $EndComp
 $Comp
 L Nixie_Lib:PS_V2H U8
 U 1 1 61CB6D1A
-P 8900 4600
-F 0 "U8" H 8900 4925 50  0000 C CNN
-F 1 "PS_V2H" H 8900 4834 50  0000 C CNN
-F 2 "Nixie_Clock_Footprint:PS_V2H" H 8650 4500 50  0001 C CNN
-F 3 "" H 8650 4500 50  0001 C CNN
-	1    8900 4600
+P 8600 4650
+F 0 "U8" H 8600 4975 50  0000 C CNN
+F 1 "PS_V2H" H 8600 4884 50  0000 C CNN
+F 2 "Nixie_Clock_Footprint:PS_V2H" H 8350 4550 50  0001 C CNN
+F 3 "" H 8350 4550 50  0001 C CNN
+	1    8600 4650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -455,8 +455,6 @@ F 3 "" H 9250 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9250 4400 9250 4500
-Wire Wire Line
-	9250 4500 9150 4500
 $Comp
 L power:GND #PWR018
 U 1 1 61CE9211
@@ -468,8 +466,6 @@ F 3 "" H 9250 4600 50  0001 C CNN
 	1    9250 4600
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	9150 4600 9250 4600
 Text Notes 6850 2350 0    50   ~ 0
 H2
 Text Notes 4750 2350 0    50   ~ 0
@@ -841,8 +837,6 @@ F 3 "" H 1500 5800 50  0001 C CNN
 	1    1500 5800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9150 4700 9400 4700
 $Comp
 L power:GND #PWR023
 U 1 1 61D93390
@@ -967,17 +961,6 @@ Wire Wire Line
 Wire Wire Line
 	8250 2400 8250 2450
 Connection ~ 8250 2450
-$Comp
-L Nixie_Lib:NCV7805BTG U9
-U 1 1 61D73441
-P 9750 4850
-F 0 "U9" H 9750 5225 50  0000 C CNN
-F 1 "NCV7805BTG" H 9750 5134 50  0000 C CNN
-F 2 "Nixie_Clock_Footprint:SIP-3" H 9750 4850 50  0001 C CNN
-F 3 "" H 9750 4850 50  0001 C CNN
-	1    9750 4850
-	1    0    0    -1  
-$EndComp
 $Comp
 L Nixie_Lib:L7812CV U7
 U 1 1 61D7E0A5
@@ -1167,4 +1150,36 @@ Wire Wire Line
 Wire Wire Line
 	1800 4500 2150 4500
 Connection ~ 2150 4500
+Wire Wire Line
+	8900 4500 9250 4500
+Wire Wire Line
+	8900 4600 9250 4600
+Wire Wire Line
+	8900 4700 9400 4700
+$Comp
+L power:+12V #PWR?
+U 1 1 621063D4
+P 9000 4900
+F 0 "#PWR?" H 9000 4750 50  0001 C CNN
+F 1 "+12V" H 9015 5073 50  0000 C CNN
+F 2 "" H 9000 4900 50  0001 C CNN
+F 3 "" H 9000 4900 50  0001 C CNN
+	1    9000 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8900 4800 9000 4800
+Wire Wire Line
+	9000 4800 9000 4900
+$Comp
+L Nixie_Lib:NJM78M05FA‎ U?
+U 1 1 61DA4461
+P 9750 4850
+F 0 "U?" H 9750 5225 50  0000 C CNN
+F 1 "NJM78M05FA‎" H 9750 5134 50  0000 C CNN
+F 2 "" H 9750 4850 50  0001 C CNN
+F 3 "" H 9750 4850 50  0001 C CNN
+	1    9750 4850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

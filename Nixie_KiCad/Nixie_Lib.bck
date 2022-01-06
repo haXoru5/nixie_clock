@@ -37,11 +37,11 @@ $CMP L7812CV
 D Voltage Regulator 12.0V Fixed Output
 $ENDCMP
 #
-$CMP NCV7800
+$CMP NCV7805BTG
 D Voltage Regulator 5.0V Fixed Output
 $ENDCMP
 #
-$CMP NCV7805BTG
+$CMP NJM78M05FA‎
 D Voltage Regulator 5.0V Fixed Output
 $ENDCMP
 #
