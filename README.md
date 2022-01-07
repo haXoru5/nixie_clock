@@ -1,4 +1,4 @@
-# nixie_clock
+# Nixie Clock
 
 ## Warning, Nixie Tubes require high voltages, use caution when handling
 
