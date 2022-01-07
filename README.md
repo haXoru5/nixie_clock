@@ -25,6 +25,8 @@ The schematic was created as follows. Custom symbols were created for several co
 After the schematic is created, I assigned footprints to the symbols and generated a netlist.
 The netlist was used to create a ratsnest which could be used to create the PCB. I put all parts apart from the nixie tubes on the back side to ease mounting and presentation in the future. Mounting holes are also drilled to mount the PCB to its housing. Apart from the nixie tubes, all parts were standard sizes and had footprints already available in the KiCad footprint libraries. The custom footprints can be found in this repository [here](https://github.com/haXoru5/nixie_clock/tree/main/Nixie_KiCad). Note that due to the high voltages, trace clearance must be increased to 0.4mm. Track width can remain the same as current is not too high. Note that depending on the PCB manufacturer, additional default settings in Pcpnew may need to be adjusted.
 ![PCB](Docs/PCB_Front.png)
+![Front Render](Docs/Front_Render.png)
+![Back_Render](Docs/Back_Render.png)
 ## Housing
 WIP
 ## Arduino Code
@@ -32,6 +34,7 @@ WIP
 ## Production
 ### Gerbers
 Generating Gerber and drill files may depend on the PCB manufacturer. As I ordered my PCB from JLCPCB, I used [their specifications](https://support.jlcpcb.com/article/149-how-to-generate-gerber-and-drill-files-in-kicad).
+![gerber](Docs/Gerber.png)
 ### Parts
 The parts I used were sourced from a variety of suppliers. For a comprehensive parts list, refer to [the BOM](https://github.com/haXoru5/nixie_clock/blob/main/BOM.csv).
 **Ebay**
