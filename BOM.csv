@@ -11,5 +11,5 @@ U2 U4 U11 U13 ,4,IN-14,Nixie_Clock_Footprint:IN-14,https://tubehobby.com/datashe
 U14 ,1,DS3231,Nixie_Clock_Footprint:DS3231,https://datasheets.maximintegrated.com/en/ds/DS3231.pdf
 U6 ,1,IN-3,Nixie_Clock_Footprint:IN-3,http://www.tube-tester.com/sites/nixie/dat_arch/IN-3.pdf
 U7 ,1,L7812CV,Nixie_Clock_Footprint:SIP-3,https://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf
-U8 ,1,PS_V2H,Nixie_Clock_Footprint:PS_V2H,https://github.com/haXoru5/nixie_clock/blob/main/PS_V2H.pdf
+U8 ,1,PS_V2H,Nixie_Clock_Footprint:PS_V2H,https://github.com/haXoru5/nixie_clock/blob/main/Docs/PS_V2H.pdf
 U9 ,1,NJM78M05FA?,Nixie_Clock_Footprint:SIP-3,https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/NJM78M00_E.pdf
