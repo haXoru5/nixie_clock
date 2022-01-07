@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Nixie Clock"
-Date "2021-12-27"
+Date "2022-01-06"
 Rev "1.1"
 Comp "Michael Zheng"
 Comment1 ""
@@ -709,8 +709,6 @@ F 3 "" H 9250 3350 50  0001 C CNN
 	1    9250 3350
 	0    1    1    0   
 $EndComp
-Text Notes 9850 4400 0    50   ~ 0
-Can add optional 100nF\nfilter capacitor here\nand/or voltage rectifier
 $Comp
 L Nixie_Lib:DS3231 U14
 U 1 1 61CB6AC0
