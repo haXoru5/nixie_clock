@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Nixie Clock"
-Date "2022-01-06"
-Rev "1.1"
+Date "2022-01-07"
+Rev "1.1.1"
 Comp "Michael Zheng"
 Comment1 ""
 Comment2 ""
@@ -808,7 +808,7 @@ Wire Wire Line
 	2200 2350 2300 2350
 NoConn ~ 1200 2350
 NoConn ~ 1200 2450
-NoConn ~ 1200 2550
+NoConn ~ 1200 2750
 NoConn ~ 1200 3250
 NoConn ~ 1200 3550
 NoConn ~ 1200 3650
@@ -1073,14 +1073,8 @@ Wire Wire Line
 	1000 5300 1100 5300
 Wire Wire Line
 	1100 5400 1000 5400
-Text GLabel 1100 2650 0    50   Input ~ 0
-SDA
-Text GLabel 1100 2750 0    50   Input ~ 0
+Text GLabel 1100 2550 0    50   Input ~ 0
 SCL
-Wire Wire Line
-	1100 2650 1200 2650
-Wire Wire Line
-	1200 2750 1100 2750
 Wire Wire Line
 	1500 4050 1500 4900
 $Comp
@@ -1180,4 +1174,10 @@ F 3 "" H 9750 4850 50  0001 C CNN
 	1    9750 4850
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1100 2650 1200 2650
+Text GLabel 1100 2650 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	1100 2550 1200 2550
 $EndSCHEMATC
