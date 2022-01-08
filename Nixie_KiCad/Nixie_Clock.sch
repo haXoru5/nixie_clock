@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Nixie Clock"
 Date "2022-01-07"
-Rev "1.1.1"
+Rev "2.0"
 Comp "Michael Zheng"
 Comment1 ""
 Comment2 ""
@@ -441,7 +441,7 @@ F 3 "" H 7700 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9150 3450 8950 3450
+	9150 3450 9050 3450
 $Comp
 L Nixie_Lib:+170V #PWR017
 U 1 1 61CD8706
@@ -800,30 +800,14 @@ Wire Wire Line
 	10400 3150 10400 3100
 Wire Wire Line
 	10400 2750 10400 2800
-Text Notes 9000 3750 0    50   ~ 0
-Can add switch to cathode here to\npermanently turn on DEC
 Wire Wire Line
 	2300 2450 2200 2450
 Wire Wire Line
 	2200 2350 2300 2350
-NoConn ~ 1200 2350
-NoConn ~ 1200 2450
-NoConn ~ 1200 2750
 NoConn ~ 1200 3250
 NoConn ~ 1200 3550
 NoConn ~ 1200 3650
 NoConn ~ 1600 4050
-$Comp
-L Nixie_Lib:Arduino_Nano_Every A1
-U 1 1 61EA91F0
-P 1700 3050
-F 0 "A1" H 1700 1869 50  0000 C CNN
-F 1 "Arduino_Nano_Every" H 1700 1960 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 1700 3050 50  0001 C CIN
-F 3 "https://content.arduino.cc/assets/NANOEveryV3.0_sch.pdf" H 1700 3050 50  0001 C CNN
-	1    1700 3050
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR024
 U 1 1 61CE4D4F
@@ -1180,4 +1164,190 @@ Text GLabel 1100 2650 0    50   Input ~ 0
 SDA
 Wire Wire Line
 	1100 2550 1200 2550
+$Comp
+L Switch:SW_DIP_x01 SW?
+U 1 1 61DB88E1
+P 9350 3850
+F 0 "SW?" H 9350 4117 50  0000 C CNN
+F 1 "SW_DIP_x01" H 9350 4026 50  0000 C CNN
+F 2 "" H 9350 3850 50  0001 C CNN
+F 3 "~" H 9350 3850 50  0001 C CNN
+	1    9350 3850
+	1    0    0    -1  
+$EndComp
+Connection ~ 9050 3450
+Wire Wire Line
+	9050 3450 8950 3450
+$Comp
+L power:GND #PWR?
+U 1 1 61DC508D
+P 9750 3950
+F 0 "#PWR?" H 9750 3700 50  0001 C CNN
+F 1 "GND" H 9755 3777 50  0000 C CNN
+F 2 "" H 9750 3950 50  0001 C CNN
+F 3 "" H 9750 3950 50  0001 C CNN
+	1    9750 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3450 9050 3850
+Wire Wire Line
+	9650 3850 9750 3850
+Wire Wire Line
+	9750 3850 9750 3950
+Text GLabel 1100 2750 0    50   Input ~ 0
+ALRM
+Text GLabel 1100 2350 0    50   Input ~ 0
+ALRM+
+Text GLabel 1100 2450 0    50   Input ~ 0
+ALRM-
+Wire Wire Line
+	1100 2350 1200 2350
+$Comp
+L Nixie_Lib:Arduino_Nano_Every A1
+U 1 1 61EA91F0
+P 1700 3050
+F 0 "A1" H 1700 1869 50  0000 C CNN
+F 1 "Arduino_Nano_Every" H 1700 1960 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 1700 3050 50  0001 C CIN
+F 3 "https://content.arduino.cc/assets/NANOEveryV3.0_sch.pdf" H 1700 3050 50  0001 C CNN
+	1    1700 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 2450 1200 2450
+Wire Wire Line
+	1100 2750 1200 2750
+$Comp
+L Device:R R?
+U 1 1 61E7D12A
+P 1500 6900
+F 0 "R?" H 1570 6946 50  0000 L CNN
+F 1 "220" H 1570 6855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1430 6900 50  0001 C CNN
+F 3 "~" H 1500 6900 50  0001 C CNN
+	1    1500 6900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61E7D6BF
+P 1500 7150
+F 0 "#PWR?" H 1500 6900 50  0001 C CNN
+F 1 "GND" H 1505 6977 50  0000 C CNN
+F 2 "" H 1500 7150 50  0001 C CNN
+F 3 "" H 1500 7150 50  0001 C CNN
+	1    1500 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61E8ADEA
+P 1500 6550
+F 0 "#PWR?" H 1500 6400 50  0001 C CNN
+F 1 "+5V" H 1515 6723 50  0000 C CNN
+F 2 "" H 1500 6550 50  0001 C CNN
+F 3 "" H 1500 6550 50  0001 C CNN
+	1    1500 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 7150 1500 7050
+Wire Wire Line
+	1500 6550 1500 6650
+Text GLabel 1600 6650 2    50   Input ~ 0
+ALRM
+Wire Wire Line
+	1500 6650 1600 6650
+Connection ~ 1500 6650
+Wire Wire Line
+	1500 6650 1500 6750
+$Comp
+L Device:R R?
+U 1 1 61EC38AF
+P 2150 6900
+F 0 "R?" H 2220 6946 50  0000 L CNN
+F 1 "220" H 2220 6855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2080 6900 50  0001 C CNN
+F 3 "~" H 2150 6900 50  0001 C CNN
+	1    2150 6900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61EC3F05
+P 2150 6550
+F 0 "#PWR?" H 2150 6400 50  0001 C CNN
+F 1 "+5V" H 2165 6723 50  0000 C CNN
+F 2 "" H 2150 6550 50  0001 C CNN
+F 3 "" H 2150 6550 50  0001 C CNN
+	1    2150 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61EC4290
+P 2150 7150
+F 0 "#PWR?" H 2150 6900 50  0001 C CNN
+F 1 "GND" H 2155 6977 50  0000 C CNN
+F 2 "" H 2150 7150 50  0001 C CNN
+F 3 "" H 2150 7150 50  0001 C CNN
+	1    2150 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6550 2150 6650
+Wire Wire Line
+	2150 7050 2150 7150
+Wire Wire Line
+	2150 6650 2250 6650
+Connection ~ 2150 6650
+Wire Wire Line
+	2150 6650 2150 6750
+Text GLabel 2250 6650 2    50   Input ~ 0
+ALRM+
+$Comp
+L Device:R R?
+U 1 1 61EFBDFE
+P 2800 6900
+F 0 "R?" H 2870 6946 50  0000 L CNN
+F 1 "220" H 2870 6855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2730 6900 50  0001 C CNN
+F 3 "~" H 2800 6900 50  0001 C CNN
+	1    2800 6900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61EFCF7D
+P 2800 6550
+F 0 "#PWR?" H 2800 6400 50  0001 C CNN
+F 1 "+5V" H 2815 6723 50  0000 C CNN
+F 2 "" H 2800 6550 50  0001 C CNN
+F 3 "" H 2800 6550 50  0001 C CNN
+	1    2800 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61EFD250
+P 2800 7150
+F 0 "#PWR?" H 2800 6900 50  0001 C CNN
+F 1 "GND" H 2805 6977 50  0000 C CNN
+F 2 "" H 2800 7150 50  0001 C CNN
+F 3 "" H 2800 7150 50  0001 C CNN
+	1    2800 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 7050 2800 7150
+Wire Wire Line
+	2800 6750 2800 6650
+Wire Wire Line
+	2800 6650 2900 6650
+Connection ~ 2800 6650
+Wire Wire Line
+	2800 6650 2800 6550
+Text GLabel 2900 6650 2    50   Input ~ 0
+ALRM-
 $EndSCHEMATC
