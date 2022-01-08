@@ -57,7 +57,5 @@ Arduino Nano Every
 WIP
 
 ### Future Releases
-#### V1.2
-- Switch to turn off decimal blinker
 #### V2.0
 - Programmable alarm function
