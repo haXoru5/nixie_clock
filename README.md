@@ -44,21 +44,29 @@ Generating Gerber and drill files may depend on the PCB manufacturer. As I order
 ![gerber](Docs/Gerber.png)
 ### Parts
 The parts I used were sourced from a variety of suppliers. For a comprehensive parts list, refer to [the BOM](https://github.com/haXoru5/nixie_clock/blob/main/BOM.csv).
+
 **Ebay**
+
 IN-14 Nixie Tube
 IN-3 Nixie Tube
 High Voltage Power Supply
 K155ID1 BCD Decoder IC
+
 **Aliexpress**
+
 DS3231 RTC
 DIP Sockets
 Female PCB Headers
+
 **DigiKey**
+
 L7812CV 12V Voltage Regulator
 NJM78M05FA 5V Voltage Regulator
 1/4W THT Resistors
 SMT Capacitors
+
 **Amazon**
+
 Arduino Nano Every
 ### Assembly
 WIP
