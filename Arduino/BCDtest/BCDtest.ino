@@ -33,7 +33,7 @@ char Epins[1] = {DECIMAL};  //allows for future alarm to use same IC
 
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(57600);
 
 #ifndef ESP8266
   while (!Serial)
@@ -50,8 +50,9 @@ void setup()
   if (rtc.lostPower())
   {
     Serial.println("RTC lost power, let's set the time!");
-    rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));   //sets RTC time to time at compilation
+    rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));   //sets RTC time if lost power
   }
+    rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));   //uncomment to set time
 
   pinMode(H1A, OUTPUT);
   pinMode(H1B, OUTPUT);
