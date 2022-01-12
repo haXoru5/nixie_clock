@@ -30,7 +30,14 @@ The netlist was used to create a ratsnest which could be used to create the PCB.
 ## Housing
 WIP
 ## Arduino Code
-WIP
+The Arduino code uses the DS3231 RTC to get hours, minutes, and seconds and converts it to a BDC to display on the Nixie tubes via the K155ID1 ICs.
+### Board Specific Settings
+Install the megaAVR package for the Arduino Nano Every.
+Ensure register emulation is off.
+### Libraries
+The code requires two libraries, which can be installed using their ZIP package, or by searching in the Arduino IDE
+- [RTClib](https://github.com/adafruit/RTClib)
+- [Adafruit BusIO](https://github.com/adafruit/Adafruit_BusIO)
 ## Production
 ### Gerbers
 Generating Gerber and drill files may depend on the PCB manufacturer. As I ordered my PCB from JLCPCB, I used [their specifications](https://support.jlcpcb.com/article/149-how-to-generate-gerber-and-drill-files-in-kicad).
