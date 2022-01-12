@@ -52,7 +52,7 @@ void setup()
     Serial.println("RTC lost power, let's set the time!");
     rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));   //sets RTC time if lost power
   }
-    rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));   //uncomment to set time
+    //rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));   //uncomment to set time
 
   pinMode(H1A, OUTPUT);
   pinMode(H1B, OUTPUT);
