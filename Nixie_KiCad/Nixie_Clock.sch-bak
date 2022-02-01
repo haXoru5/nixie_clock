@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Nixie Clock"
 Date "2022-01-07"
-Rev "1.1.1"
+Rev "2.0"
 Comp "Michael Zheng"
 Comment1 ""
 Comment2 ""
@@ -441,7 +441,7 @@ F 3 "" H 7700 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9150 3450 8950 3450
+	9150 3450 9050 3450
 $Comp
 L Nixie_Lib:+170V #PWR017
 U 1 1 61CD8706
@@ -800,30 +800,14 @@ Wire Wire Line
 	10400 3150 10400 3100
 Wire Wire Line
 	10400 2750 10400 2800
-Text Notes 9000 3750 0    50   ~ 0
-Can add switch to cathode here to\npermanently turn on DEC
 Wire Wire Line
 	2300 2450 2200 2450
 Wire Wire Line
 	2200 2350 2300 2350
-NoConn ~ 1200 2350
-NoConn ~ 1200 2450
-NoConn ~ 1200 2750
 NoConn ~ 1200 3250
 NoConn ~ 1200 3550
 NoConn ~ 1200 3650
 NoConn ~ 1600 4050
-$Comp
-L Nixie_Lib:Arduino_Nano_Every A1
-U 1 1 61EA91F0
-P 1700 3050
-F 0 "A1" H 1700 1869 50  0000 C CNN
-F 1 "Arduino_Nano_Every" H 1700 1960 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 1700 3050 50  0001 C CIN
-F 3 "https://content.arduino.cc/assets/NANOEveryV3.0_sch.pdf" H 1700 3050 50  0001 C CNN
-	1    1700 3050
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR024
 U 1 1 61CE4D4F
@@ -1180,4 +1164,142 @@ Text GLabel 1100 2650 0    50   Input ~ 0
 SDA
 Wire Wire Line
 	1100 2550 1200 2550
+$Comp
+L Switch:SW_DIP_x01 SW?
+U 1 1 61DB88E1
+P 9350 3850
+F 0 "SW?" H 9350 4117 50  0000 C CNN
+F 1 "SW_DIP_x01" H 9350 4026 50  0000 C CNN
+F 2 "" H 9350 3850 50  0001 C CNN
+F 3 "~" H 9350 3850 50  0001 C CNN
+	1    9350 3850
+	1    0    0    -1  
+$EndComp
+Connection ~ 9050 3450
+Wire Wire Line
+	9050 3450 8950 3450
+$Comp
+L power:GND #PWR?
+U 1 1 61DC508D
+P 9750 3950
+F 0 "#PWR?" H 9750 3700 50  0001 C CNN
+F 1 "GND" H 9755 3777 50  0000 C CNN
+F 2 "" H 9750 3950 50  0001 C CNN
+F 3 "" H 9750 3950 50  0001 C CNN
+	1    9750 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3450 9050 3850
+Wire Wire Line
+	9650 3850 9750 3850
+Wire Wire Line
+	9750 3850 9750 3950
+Text GLabel 1100 2750 0    50   Input ~ 0
+ALRM
+Text GLabel 1100 2350 0    50   Input ~ 0
+ALRM+
+Text GLabel 1100 2450 0    50   Input ~ 0
+ALRM-
+Wire Wire Line
+	1100 2350 1200 2350
+$Comp
+L Nixie_Lib:Arduino_Nano_Every A1
+U 1 1 61EA91F0
+P 1700 3050
+F 0 "A1" H 1700 1869 50  0000 C CNN
+F 1 "Arduino_Nano_Every" H 1700 1960 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 1700 3050 50  0001 C CIN
+F 3 "https://content.arduino.cc/assets/NANOEveryV3.0_sch.pdf" H 1700 3050 50  0001 C CNN
+	1    1700 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 2450 1200 2450
+Wire Wire Line
+	1100 2750 1200 2750
+Text GLabel 1100 6450 0    50   Input ~ 0
+ALRM
+Text GLabel 1100 6850 0    50   Input ~ 0
+ALRM+
+Text GLabel 1100 7250 0    50   Input ~ 0
+ALRM-
+$Comp
+L Switch:SW_Push SW?
+U 1 1 61E3B7EB
+P 1400 6450
+F 0 "SW?" H 1400 6735 50  0000 C CNN
+F 1 "SW_Push" H 1400 6644 50  0000 C CNN
+F 2 "" H 1400 6650 50  0001 C CNN
+F 3 "~" H 1400 6650 50  0001 C CNN
+	1    1400 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61E64086
+P 1700 6450
+F 0 "#PWR?" H 1700 6200 50  0001 C CNN
+F 1 "GND" V 1705 6322 50  0000 R CNN
+F 2 "" H 1700 6450 50  0001 C CNN
+F 3 "" H 1700 6450 50  0001 C CNN
+	1    1700 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 61E66E38
+P 1400 6850
+F 0 "SW?" H 1400 7135 50  0000 C CNN
+F 1 "SW_Push" H 1400 7044 50  0000 C CNN
+F 2 "" H 1400 7050 50  0001 C CNN
+F 3 "~" H 1400 7050 50  0001 C CNN
+	1    1400 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 61E67592
+P 1400 7250
+F 0 "SW?" H 1400 7535 50  0000 C CNN
+F 1 "SW_Push" H 1400 7444 50  0000 C CNN
+F 2 "" H 1400 7450 50  0001 C CNN
+F 3 "~" H 1400 7450 50  0001 C CNN
+	1    1400 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 7250 1200 7250
+Wire Wire Line
+	1100 6850 1200 6850
+Wire Wire Line
+	1100 6450 1200 6450
+Wire Wire Line
+	1600 6450 1700 6450
+$Comp
+L power:GND #PWR?
+U 1 1 61E9C82E
+P 1700 6850
+F 0 "#PWR?" H 1700 6600 50  0001 C CNN
+F 1 "GND" V 1705 6722 50  0000 R CNN
+F 2 "" H 1700 6850 50  0001 C CNN
+F 3 "" H 1700 6850 50  0001 C CNN
+	1    1700 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61E9CC91
+P 1700 7250
+F 0 "#PWR?" H 1700 7000 50  0001 C CNN
+F 1 "GND" V 1705 7122 50  0000 R CNN
+F 2 "" H 1700 7250 50  0001 C CNN
+F 3 "" H 1700 7250 50  0001 C CNN
+	1    1700 7250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 6850 1700 6850
+Wire Wire Line
+	1600 7250 1700 7250
 $EndSCHEMATC
